@@ -61,6 +61,26 @@ main h2 ::before {
 form .input-field:first-child {
     margin-bottom:1.5rem ;
 }
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    bottom: -5px;
+    background: rgba(0, 0, 0, 0.123);
+}
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    transform: scaleX(0);
+}
+.input-field input:focus {
+
+}
 
 .input-field input {
     font-size: 0.9rem;
